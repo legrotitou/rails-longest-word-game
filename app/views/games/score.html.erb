@@ -1,0 +1,9 @@
+<% if @included && @english_word %>
+  <p>Congratulations <%= @answer %> is a valid English word</p>
+
+<% elsif @included %>
+  <p>Sorry, but <%= @answer %> is not an English Word</p>
+
+<% else %>
+<p>Sorry, but <%= @answer %> is not made out of the grid</p>
+<% end %>
